@@ -65,6 +65,17 @@
                     <string id="fileName">VeankoAI</string>
                     <string id="Minimized">yes</string>
                 </action>
+                <condition id="getBoolEquals">
+                    <string id="id">MoveAwayFromTarget</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Prevents getting stuck behind turrets below 30% difficulty</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">RetreatingFromNauts</string>
+                            <string id="value" values="flagtoggle">no</string>
+                        </action>
+                    </normal>
+                </condition>
                 <andblock>
                     <string id="Comment">Free myself from hook</string>
                     <string id="Minimized">yes</string>
